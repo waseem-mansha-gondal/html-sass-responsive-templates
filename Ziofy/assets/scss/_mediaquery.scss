@@ -1,0 +1,69 @@
+@import "_variables";
+
+@media (max-width: 576px) {
+  .heading-container h2 {
+    font-size: 30px;
+  }
+
+  .info-section .contact-nav {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .info-section .contact-nav .box {
+    margin-bottom: 25px;
+    a {
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  .info-section .info-links .info-links-menu {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-section .detail-box {
+    margin-top: 45px;
+  }
+  .pay-section {
+    background: linear-gradient(110deg, transparent 17%, $secondary 17%);
+  }
+
+  .pay-section .img-box {
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .custom-nav-container {
+    margin-left: 20px;
+  }
+
+  .pay-section {
+    background: linear-gradient(110deg, transparent 25%, $secondary 25%);
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-second-section {
+    margin-right: 20px;
+    padding-bottom: 20px;
+
+    ul li {
+      padding-bottom: 6px;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .custom-nav-container {
+    margin-left: 20px;
+    #navbarSupportedContent {
+      margin-left: 70px;
+    }
+  }
+}

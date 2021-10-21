@@ -1,0 +1,231 @@
+@import "_mediaquery";
+@import "_mixins";
+@import "_variables";
+
+body{
+    min-width: fit-content;;
+}
+p{
+    font-family: "Roboto-Light";
+    font-weight: 200;
+    letter-spacing: 0.5px;
+}
+a{
+    font-family: "Roboto-Bold";
+    font-weight: 500;
+    text-transform: uppercase;
+}
+h1,h3{
+    text-transform: capitalize;
+}
+h1,h3,span{
+    font-family: "Roboto-Bold";
+    font-weight: 700;
+}
+.header-section{
+     width: 100%;
+    .navbar-brand{
+        width: 100px;
+       
+    }
+    .navbar-toggler {
+        &:focus{
+        box-shadow: none;
+       }
+    }
+    .nav-link{
+        font-family: "Roboto-Black";
+        font-weight: 600;
+        letter-spacing: 0.3px;
+        font-size: 15px;
+        border-radius: 30px;
+        justify-content: center;
+        align-items: center;
+        width:fit-content;
+        padding: 5px 15px;
+        &:hover{
+            @include card-color($primary,$white);
+        }
+    }
+    a{
+      @extend %link-style;
+    }
+    .search-button{
+        background: none;
+        border: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        color:$black;
+        &:hover{
+             @include card-color($dark-blue,$white);
+        }
+    }
+    .carousel-section{
+    height: auto;
+    .bars-icon{
+        :nth-child(1){
+            @extend %bar-style;
+            background-color:$primary;
+        }
+        :nth-child(2){
+            @extend %bar-style;
+            background-color: $dark-blue;
+        }
+    }
+    span{
+       font-size: 40px;
+      }
+    .carousal-image {
+        height: 300px;
+      }
+      a{
+           font-size: 15px;
+          &:hover{
+              color:$primary;
+              font-weight: 600;
+          }
+      }
+    }
+    .carousel-button{
+        @include card-color($dark-blue,$white);
+            height: 30px;
+            width: 30px;
+            border-radius:50%;
+            border: none;
+            font-size: large;
+            margin: 15px;
+    }
+}
+// skating section
+.skating-section{
+    .card-column{
+        @extend %card-style;
+        background-color:$primary ;
+        opacity: 0.5;
+       
+        &:hover{
+            @include card-color( $blue-chill,$white);
+            @extend %hover-transitions;
+            opacity: 1.0;
+        }
+      } 
+      .middle-card-column{
+          @extend %card-style;
+          background-color:$dark-blue;
+          opacity: 0.5;
+          &:hover{
+            @include card-color( $blue-chill,$white);
+            @extend %hover-transitions;
+            opacity: 1.0;
+          }
+      }
+      a{
+          text-decoration: none;
+           &:hover{
+                color: $primary!important;
+                font-weight: 600;
+           }
+      }
+
+}
+// about section
+.about-skating{
+    @include card-color(#3f0bcf,$white);
+    img{
+        width: 100%;
+    }
+    a:hover{
+        color:$primary!important;
+        font-weight: 600;
+    }
+    h1{
+        font-weight: 700;
+    }
+}
+// skate shop section
+.skate-shop-section{
+
+    a{
+        @extend %link-style;
+        &:hover{
+            color:$primary;
+            font-weight: 600;
+        }
+    }
+    img{
+        width: 100%;
+    }
+}
+// cards
+
+.card-section{
+@include card-color($dark-blue,$white);
+     .card-column{
+       @extend %card-style;
+       background-color: $primary;
+        position: relative;
+        &:hover{
+            @include card-color( $blue-chill,$white);
+            @extend %hover-transitions;
+        }
+    }
+    .card-icon{
+        width: 54px;
+        height: 54px;
+        border-radius: 50%;
+        background-color:$white;
+        color: $downy;
+        font-size: xx-large;
+        position: absolute;
+        top: 0%;
+        left: 50%; 
+    }
+    i{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+    }
+    h3{
+        text-transform: capitalize;
+    }
+}
+
+// footer section
+.skating-footer{
+    margin-top:150px;
+    .footer-social-icons{
+      border-radius: 50%;
+      width: 27px;
+      height: 27px;
+      margin: 1px;
+      background-color: $thunder;
+      color:$white;
+    }
+    .footer-right-border{
+      border-right: $primary;
+      border-right-style: solid;
+    }
+    .footer{
+      background-color:$primary;
+      padding: 10px 0px;
+    }
+    .footer-subscribe-btn{
+      background-color: $primary;
+      padding: 6px 25px !important;
+      margin-left:10px ;
+      border-radius: 10px;
+      border: 1px solid transparent;
+      &:hover{
+        background-color: $dark-blue;
+     }
+    }
+    a{
+       @extend %link-style;
+    }
+    input,button,label{
+        font-family: "Roboto-Black";
+        font-size: medium;
+        font-weight: 500;
+    }
+}

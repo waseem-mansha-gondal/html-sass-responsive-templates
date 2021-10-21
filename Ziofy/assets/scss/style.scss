@@ -1,0 +1,575 @@
+@import "_variables";
+@import "_mediaquery";
+@import "_mixins";
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Roboto:wght@200&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  color: $black;
+  background-color: $white;
+  overflow-x: hidden;
+
+  //paragraph fonts
+  p {
+    font-family: roboto;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  // headings fonts
+  h1 {
+    font-family: roboto-regular;
+    font-weight: 800;
+    font-size: 64px;
+  }
+  h2 {
+    font-family: roboto-regular;
+    font-weight: 800;
+    font-size: 44px;
+  }
+  h3 {
+    font-family: roboto-regular;
+    font-weight: 350;
+    font-size: 38px;
+  }
+  h4 {
+    font-family: roboto-regular;
+    font-weight: 800;
+    font-size: 26px;
+  }
+  h5 {
+    font-family: roboto-regular;
+    font-weight: 900;
+    font-size: 22px;
+  }
+}
+// headings
+.heading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  h2.heading {
+    margin: 0;
+    color: $primary;
+  }
+  h2 {
+    margin: 0;
+  }
+}
+
+/* header section  */
+.header-section {
+  background-color: $secondary;
+  margin-bottom: 100px;
+  z-index: 3;
+}
+
+.custom-nav-container {
+  padding: 0;
+
+  // extend bootstrap navbar class
+  .navbar-brand {
+    margin: 0;
+    padding: 0;
+    img {
+      width: 75px;
+    }
+  }
+  .btn-toggler {
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        padding: 10px 25px;
+        color: $white;
+        text-align: center;
+        &:focus {
+          font-weight: bold;
+          border-bottom: 2px $white solid;
+        }
+        &:hover {
+          font-weight: bold;
+          border-bottom: 2px $white solid;
+        }
+      }
+    }
+  }
+  .nav-search-btn {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    color: $white;
+    background-color: $secondary;
+    margin: 0 20px;
+    border: 1px solid transparent;
+    &:hover {
+      background-color: $primary;
+      border: 1px solid transparent;
+    }
+  }
+}
+
+.navbar-second-section {
+  padding-right: 25px;
+  a {
+    color: $white;
+    text-decoration: none;
+    span {
+      margin-left: 5px;
+    }
+  }
+}
+
+/* slider section */
+.slider-section {
+  margin-bottom: $section-bottom-margin;
+  padding-top: $section-top-padding;
+  background-color: $light-gray;
+
+  #customCarousel1 {
+    width: 100%;
+    position: unset;
+  }
+  .carousel-detail-box {
+    h1 {
+      margin-bottom: -6px;
+      color: $primary;
+    }
+    h2 {
+      margin-bottom: 25px;
+    }
+
+    .btn-box {
+      display: flex;
+      :nth-child(1) {
+        @include ziofy-btn($silky-white, $black, 15px, 15px, 0);
+        text-decoration: none;
+      }
+      :nth-child(2) {
+        @include ziofy-btn($black, $white, 15px, 15px, 0);
+        text-decoration: none;
+      }
+    }
+
+    a {
+      margin: 5px;
+      width: 195px;
+      text-align: center;
+    }
+  }
+  .img-box {
+    img {
+      margin-top: 30px;
+      width: 100%;
+    }
+  }
+
+  .carousel-btn-container {
+    margin-top: 50px;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    font-size: 22px;
+
+    .carousel-control-btn {
+      position: unset;
+      width: 50px;
+      height: 50px;
+      background-color: $primary;
+      opacity: 1;
+      font-size: 28px;
+      transition: all 0.3s;
+      &:hover {
+        background-color: $white;
+        color: $black;
+      }
+    }
+  }
+}
+
+// about section
+
+.about-section {
+  margin-bottom: $section-bottom-margin;
+  padding-top: $section-top-padding;
+
+  .img-box {
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .detail-box {
+    p {
+      color: $silver;
+      margin-top: 15px;
+    }
+
+    a {
+      text-decoration: none;
+      @include ziofy-btn($black, $white, 15px, 45px, 0px);
+      margin-top: 15px;
+    }
+  }
+}
+
+.container-border-style {
+  position: relative;
+  padding: 20px;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 4px;
+    height: 90px;
+    background-color: $primary;
+    transform: translateY(-50%);
+  }
+
+  &::before {
+    left: 0;
+  }
+
+  &::after {
+    right: 0;
+  }
+}
+
+//service section
+.service-section {
+  padding-top: $section-top-padding;
+  .box {
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .img-box {
+      width: 75px;
+      height: 75px;
+      background-color: $primary;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 50px;
+      }
+    }
+
+    .detail-box {
+      margin-top: 15px;
+
+      a {
+        text-transform: uppercase;
+        color: $primary;
+
+        &:hover {
+          color: $secondary;
+        }
+      }
+    }
+
+    &:hover {
+      .img-box {
+        background-color: $secondary;
+      }
+    }
+  }
+
+  .service-middle-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .box {
+      justify-self: center;
+      margin-bottom: 14%;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    justify-self: flex-end;
+    @include ziofy-btn($black, $white, 15px, 45px, 0px);
+  }
+}
+
+// pay section
+
+.pay-section {
+  margin-top: 100px;
+  padding: 55px 0;
+  color: $white;
+  .img-box {
+    img {
+      width: 100%;
+    }
+  }
+
+  .detail-box {
+    a {
+      text-decoration: none;
+      @include ziofy-btn($black, $white, 15px, 45px, 0);
+      margin-top: 25px;
+    }
+  }
+}
+
+// client section
+
+.client-section {
+  padding-top: $section-top-padding;
+  background-color: $light-gray;
+  .heading-container {
+    margin-bottom: 35px;
+  }
+
+  .box {
+    margin: 15px 75px;
+    border: 1px dotted $black;
+    padding: 25px;
+    text-align: center;
+
+    h5 {
+      color: $black;
+      text-transform: uppercase;
+    }
+
+    p {
+      margin-top: 15px;
+    }
+
+    i {
+      font-size: 24px;
+      color: $primary;
+    }
+  }
+
+  .carousel-control-btn {
+    width: 47px;
+    height: 40px;
+    background-color: $primary;
+    opacity: 1;
+    font-size: 28px;
+    font-weight: bold;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .carousel-control-prev {
+    left: 0;
+  }
+
+  .carousel-control-next {
+    right: 0;
+  }
+}
+
+// contact section
+.contact-section {
+  background-color: $light-gray;
+  padding-top: $section-top-padding;
+  padding-bottom: 20px;
+  .heading-container {
+    margin-bottom: 25px;
+
+    h2 {
+      text-transform: uppercase;
+    }
+  }
+
+  .form-container {
+    margin-right: 45px;
+
+    input {
+      width: 100%;
+      border: 1px solid $silver-light;
+      height: 50px;
+      margin-bottom: 25px;
+      padding-left: 15px;
+      background-color: transparent;
+      outline: none;
+      color: $black;
+      &::placeholder {
+        color: $silver-light;
+      }
+    }
+    button {
+      border: none;
+      text-transform: uppercase;
+      @include ziofy-btn($secondary, $white, 15px, 65px, 0);
+      font-weight: bold;
+    }
+  }
+  .Newsletter-heading h2 {
+    color: $primary;
+    margin-bottom: 15px;
+  }
+
+  .sub-form {
+    input {
+      width: 100%;
+      border: 1px solid $silver-light;
+      height: 50px;
+      padding-left: 15px;
+      background-color: transparent;
+      outline: none;
+      color: $black;
+    }
+
+    button {
+      margin-top: 15px;
+      @include ziofy-btn($primary, $white, 12px, 65px, 0);
+      @include upper-bold-text();
+      display: block;
+      width: 100%;
+      border: none;
+    }
+  }
+}
+
+// info section
+.info-section {
+  background-color: $black;
+  color: $white;
+  padding-top: $section-top-padding;
+
+  .contact-nav {
+    display: flex;
+    padding: 25px 0;
+
+    .box {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    a {
+      text-decoration: none;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      color: $white;
+
+      h4 {
+        margin-top: 5px;
+      }
+
+      i {
+        font-size: 24px;
+        color: $primary;
+      }
+
+      &:hover {
+        i {
+          color: $secondary;
+        }
+      }
+    }
+  }
+
+  hr {
+    border: none;
+    margin: 15px 0 45px 0;
+    background-color: $primary;
+    height: 0.9px;
+  }
+
+  .info-links {
+    .info-links-menu {
+      display: flex;
+      justify-content: center;
+
+      a {
+        color: $white;
+        margin: 5px 10px;
+        text-decoration: none;
+
+        &:hover {
+          color: $secondary;
+        }
+      }
+    }
+  }
+
+  .social-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 45px 0;
+
+    a {
+      color: $white;
+      font-size: 18px;
+      margin: 0 15px;
+      &:hover {
+        color: $secondary;
+      }
+    }
+  }
+}
+
+// footer section
+.footer-section {
+  background-color: $black;
+  text-align: center;
+  p {
+    color: $white;
+    margin: -1px;
+    padding: 12px;
+  }
+}
+
+//animation
+h1 {
+  animation-duration: 5s;
+  animation-name: slidein;
+}
+h2 {
+  animation-duration: 4s;
+  animation-name: slidein;
+}
+h4 {
+  animation-duration: 4s;
+  animation-name: slidein;
+}
+p {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+// @keyframes slidein {
+//   from {
+//     margin-left: 100%;
+//     width: 50%;
+//     // transform: translateY(-4rem) scale(0.8);
+//   }
+
+//   to {
+//     margin-left: 0%;
+//     width: 100%;
+//   }
+// }
+
+@keyframes slidein {
+  0% {
+    opacity: 0;
+    transform: translateY(-4rem) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}

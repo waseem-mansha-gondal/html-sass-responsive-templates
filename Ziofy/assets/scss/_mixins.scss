@@ -1,0 +1,22 @@
+/* mixin  */
+@mixin ziofy-btn(
+  $bg-color,
+  $customize-color,
+  $top-bottom-padding,
+  $left-right-padding,
+  $b-Radius
+) {
+  display: inline-block;
+  padding: $top-bottom-padding $left-right-padding;
+  background-color: $bg-color;
+  color: $customize-color;
+  border-radius: $b-Radius;
+  &:hover {
+    background-color: darken($bg-color, 10);
+  }
+}
+
+@mixin upper-bold-text {
+  text-transform: uppercase;
+  font-weight: bold;
+}

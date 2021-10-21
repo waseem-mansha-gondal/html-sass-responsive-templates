@@ -1,0 +1,25 @@
+@import "_variables";
+%card-style{
+    min-height: 300px;
+    padding-top:20px ;
+    border-radius: 8px;
+    color: $white;
+}
+%link-style{
+    text-decoration: none;
+    color:$black;
+} 
+%bar-style{
+    width:80px;
+    border-radius: 20px;
+    height: 15px;
+    margin: 5px;
+}
+%hover-transitions{
+    transform: scale(1.1);
+    transition: 0.7s;
+}
+@mixin card-color($background-color,$color){
+    background-color:$background-color!important ;
+    color: $color!important;
+}

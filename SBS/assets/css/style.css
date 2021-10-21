@@ -1,0 +1,291 @@
+@media only screen and (max-width: 767.98px) {
+  .footer-right-border {
+    border: 0px solid !important;
+  }
+}
+
+.skating-section .card-column, .skating-section .middle-card-column, .card-section .card-column {
+  min-height: 300px;
+  padding-top: 20px;
+  border-radius: 8px;
+  color: white;
+}
+
+.header-section a, .skate-shop-section a, .skating-footer a {
+  text-decoration: none;
+  color: black;
+}
+
+.header-section .carousel-section .bars-icon :nth-child(1), .header-section .carousel-section .bars-icon :nth-child(2) {
+  width: 80px;
+  border-radius: 20px;
+  height: 15px;
+  margin: 5px;
+}
+
+.skating-section .card-column:hover, .skating-section .middle-card-column:hover, .card-section .card-column:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+body {
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
+p {
+  font-family: "Roboto-Light";
+  font-weight: 200;
+  letter-spacing: 0.5px;
+}
+
+a {
+  font-family: "Roboto-Bold";
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+h1, h3 {
+  text-transform: capitalize;
+}
+
+h1, h3, span {
+  font-family: "Roboto-Bold";
+  font-weight: 700;
+}
+
+.header-section {
+  width: 100%;
+}
+
+.header-section .navbar-brand {
+  width: 100px;
+}
+
+.header-section .navbar-toggler:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.header-section .nav-link {
+  font-family: "Roboto-Black";
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  font-size: 15px;
+  border-radius: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 15px;
+}
+
+.header-section .nav-link:hover {
+  background-color: #f0390f !important;
+  color: white !important;
+}
+
+.header-section .search-button {
+  background: none;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: black;
+}
+
+.header-section .search-button:hover {
+  background-color: #3f0bcf !important;
+  color: white !important;
+}
+
+.header-section .carousel-section {
+  height: auto;
+}
+
+.header-section .carousel-section .bars-icon :nth-child(1) {
+  background-color: #f0390f;
+}
+
+.header-section .carousel-section .bars-icon :nth-child(2) {
+  background-color: #3f0bcf;
+}
+
+.header-section .carousel-section span {
+  font-size: 40px;
+}
+
+.header-section .carousel-section .carousal-image {
+  height: 300px;
+}
+
+.header-section .carousel-section a {
+  font-size: 15px;
+}
+
+.header-section .carousel-section a:hover {
+  color: #f0390f;
+  font-weight: 600;
+}
+
+.header-section .carousel-button {
+  background-color: #3f0bcf !important;
+  color: white !important;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: none;
+  font-size: large;
+  margin: 15px;
+}
+
+.skating-section .card-column {
+  background-color: #f0390f;
+  opacity: 0.5;
+}
+
+.skating-section .card-column:hover {
+  background-color: #138A8A !important;
+  color: white !important;
+  opacity: 1.0;
+}
+
+.skating-section .middle-card-column {
+  background-color: #3f0bcf;
+  opacity: 0.5;
+}
+
+.skating-section .middle-card-column:hover {
+  background-color: #138A8A !important;
+  color: white !important;
+  opacity: 1.0;
+}
+
+.skating-section a {
+  text-decoration: none;
+}
+
+.skating-section a:hover {
+  color: #f0390f !important;
+  font-weight: 600;
+}
+
+.about-skating {
+  background-color: #3f0bcf !important;
+  color: white !important;
+}
+
+.about-skating img {
+  width: 100%;
+}
+
+.about-skating a:hover {
+  color: #f0390f !important;
+  font-weight: 600;
+}
+
+.about-skating h1 {
+  font-weight: 700;
+}
+
+.skate-shop-section a:hover {
+  color: #f0390f;
+  font-weight: 600;
+}
+
+.skate-shop-section img {
+  width: 100%;
+}
+
+.card-section {
+  background-color: #3f0bcf !important;
+  color: white !important;
+}
+
+.card-section .card-column {
+  background-color: #f0390f;
+  position: relative;
+}
+
+.card-section .card-column:hover {
+  background-color: #138A8A !important;
+  color: white !important;
+}
+
+.card-section .card-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background-color: white;
+  color: #7CC1D3;
+  font-size: xx-large;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+}
+
+.card-section i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-section h3 {
+  text-transform: capitalize;
+}
+
+.skating-footer {
+  margin-top: 150px;
+}
+
+.skating-footer .footer-social-icons {
+  border-radius: 50%;
+  width: 27px;
+  height: 27px;
+  margin: 1px;
+  background-color: #343334;
+  color: white;
+}
+
+.skating-footer .footer-right-border {
+  border-right: #f0390f;
+  border-right-style: solid;
+}
+
+.skating-footer .footer {
+  background-color: #f0390f;
+  padding: 10px 0px;
+}
+
+.skating-footer .footer-subscribe-btn {
+  background-color: #f0390f;
+  padding: 6px 25px !important;
+  margin-left: 10px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+}
+
+.skating-footer .footer-subscribe-btn:hover {
+  background-color: #3f0bcf;
+}
+
+.skating-footer input, .skating-footer button, .skating-footer label {
+  font-family: "Roboto-Black";
+  font-size: medium;
+  font-weight: 500;
+}
+/*# sourceMappingURL=style.css.map */
